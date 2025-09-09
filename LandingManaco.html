@@ -2,11 +2,10 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">.
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MANACO | Calzado que impulsa tu paso</title>
-  <meta name="description" content="Calzado MANACO: zapatos de calidad que impulsan tu paso. Descubre nuestros productos deportivos y casuales al mejor precio.">
 
+  <meta name="description" content="Calzado MANACO: zapatos de calidad que impulsan tu paso. Descubre nuestros productos deportivos y casuales al mejor precio.">
   <meta property="og:title" content="MANACO | Calzado que impulsa tu paso">
   <meta property="og:description" content="Descubre la colección de zapatos MANACO: comodidad, estilo y calidad para todos.">
   <meta property="og:image" content="https://tusitio.com/imagen.jpg">
@@ -14,7 +13,6 @@
   <meta property="og:url" content="https://tusitio.com">
 
   <link rel="stylesheet" href="estilos.css">
-  <title>MANACO</title>
   
 </head>
 <body>
@@ -23,7 +21,8 @@
   <header>
     <nav aria-label="Menú Principal">
       <h2>MANACO</h2>
-      <ul>
+      <button class="menu-btn" aria-label="Abrir menú">&#9776;</button>
+      <ul class="menu">
         <li><a href="#">Inicio</a></li>
         <li><a href="#">Servicios</a></li>
         <li><a href="#">Contacto</a></li>
@@ -33,35 +32,41 @@
 
   <main id="contenido">
 
-    <section>
+    <section class="banner">
       <h1>Calzado que impulsa tu paso</h1>
     </section>
 
     <section>
       <h2>Productos</h2>
-      <ul>
+      <ul class="productos">
         <li>
           <article>
-            <img src="tenisdama.jpg" alt="Zapato deportivo dama modelo 1" width="150" height="150">
-            <h3>Producto 1</h3>
-            <p>Bs. 00.00</p>
-            <button>Comprar</button>
+            <img src="tenisdama.jpg" alt="Zapato deportivo dama modelo 1">
+            <div>
+              <h3>Producto 1</h3>
+              <p>Bs. 420.00</p>
+              <button>Comprar</button>
+            </div>
           </article>
         </li>
         <li>
           <article>
-            <img src="tenisvaron.jpg" alt="zapato deportivo varon modelo 2" width="150" height="150">
-            <h3>Producto 2</h3>
-            <p>Bs. 00.00</p>
-            <button>Comprar</button>
+            <img src="tenisvaron.jpg" alt="zapato deportivo varon modelo 2">
+            <div>
+              <h3>Producto 2</h3>
+              <p>Bs. 570.00</p>
+              <button>Comprar</button>
+            </div>
           </article>
         </li>
         <li>
           <article>
-            <img src="zapatodama.jpg" alt="Zapato dama modelo 3" width="150" height="150">
-            <h3>Producto 3</h3>
-            <p>Bs. 00.00</p>
-            <button>Comprar</button>
+            <img src="zapatodama.jpg" alt="Zapato dama modelo 3">
+            <div>
+              <h3>Producto 3</h3>
+              <p>Bs. 380.00</p>
+              <button>Comprar</button>
+            </div>
           </article>
         </li>
       </ul>
@@ -71,6 +76,5 @@
   <footer>
     <p>Copyright 2025 MANACO</p>
   </footer>
-
 </body>
 </html>

@@ -1,3 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f8f8f8;
+  color: #000;
+}
+
 .skip-link {
   position: absolute;
   top: -40px;
@@ -6,11 +18,137 @@
   color: #fff;
   padding: 8px;
   z-index: 100;
-  text-decoration: none;
-  border-radius: 4px;
-  transition: top 0.3s;
 }
-
 .skip-link:focus {
   top: 0;
+}
+
+header {
+  border: 1px solid #000;
+  padding: 0.5rem 1rem;
+  background: #fff;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h2 {
+  font-size: 1.2rem;
+}
+
+.menu {
+  display: none;
+  list-style: none;
+  gap: 1rem;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #000;
+}
+
+.menu-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+main {
+  padding: 1rem;
+}
+
+.banner {
+  display: none;
+  border: 1px solid #000;
+  padding: 2rem;
+  margin: 1rem 0;
+  text-align: center;
+  background: #eaeaea;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+main h2 {
+  margin: 1rem 0;
+}
+
+.productos {
+  display: grid;
+  gap: 1rem;
+  list-style: none;
+}
+
+article {
+  border: 1px solid #000;
+  padding: 0.5rem;
+  background: #eaeaea;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+article img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border: 1px solid #000;
+  background: #ccc;
+}
+
+article div {
+  flex: 1;
+}
+button {
+  margin-top: 0.3rem;
+  padding: 0.4rem 1rem;
+  border: 1px solid #000;
+  background: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #ddd;
+}
+
+footer {
+  border: 1px solid #000;
+  padding: 1rem;
+  text-align: center;
+  margin-top: 1rem;
+  background: #fff;
+}
+
+@media (min-width: 768px) {
+  .banner {
+    display: block;
+  }
+
+  .menu {
+    display: flex;
+  }
+
+  .menu-btn {
+    display: none;
+  }
+  
+  .productos {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  article {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  article img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+  }
 }

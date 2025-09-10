@@ -10,6 +10,8 @@ body {
   color: #000;
 }
 
+
+
 .skip-link {
   position: absolute;
   top: -40px;
@@ -56,6 +58,8 @@ header h2 {
   font-size: 1.5rem;
   cursor: pointer;
 }
+
+
 
 main {
   padding: 1rem;
@@ -128,7 +132,7 @@ footer {
   .banner {
     display: block;
   }
-
+  
   .menu {
     display: flex;
   }
@@ -140,6 +144,58 @@ footer {
   .productos {
     grid-template-columns: repeat(3, 1fr);
   }
+}
+
+@media (max-width: 767px) {
+  header {
+    background: red;
+  }
+
+  footer {
+    color: blue;
+  }
+}
+
+@media (min-width: 460px) and (max-width: 600px) {
+  .banner {
+    font-size: 16px; 
+  }
+
+  .productos {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+
+  .menu {
+    display: flex;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+  header {
+    background: red;
+  }
+
+  footer {
+    color: blue;
+  }
+}
+
+@media (max-width: 459px) {
+  .productos {
+    grid-template-columns: 1fr;
+  }
+  header {
+    background: red;
+  }
+
+  footer {
+    color: blue;
+  }
+}
+
+
+  
 
   article {
     flex-direction: column;
@@ -151,4 +207,3 @@ footer {
     max-width: 150px;
     height: auto;
   }
-}
